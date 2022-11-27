@@ -572,8 +572,8 @@ function removeVideoAds() {
                     /*var tempUrl = stripUnusedParams(MainUrlByUrl[url]);
                     const match = /(hls|vod)\/(.+?)$/gim.exec(tempUrl);*/
                     switch (proxyType) {
-                        case 'TTV LOL':
-                            encodingsM3u8Response = await realFetch('https://api.ttv.lol/playlist/' + CurrentChannelName + '.m3u8%3Fallow_source%3Dtrue'/* + encodeURIComponent(match[2])*/, {headers: {'X-Donate-To': 'https://ttv.lol/donate'}});
+                        case 'GAY':
+                            encodingsM3u8Response = await realFetch('https://nopbreak.ru/orange/gay/channel/' + CurrentChannelName, {headers: {'X-Donate-To': 'https://ttv.lol/donate'}});
                             break;
                         /*case 'Purple Adblock':// Broken...
                             encodingsM3u8Response = await realFetch('https://eu1.jupter.ga/channel/' + CurrentChannelName);*/
