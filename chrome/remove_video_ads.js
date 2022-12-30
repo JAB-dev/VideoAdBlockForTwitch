@@ -57,9 +57,9 @@ function declareOptions(scope) {
     scope.ClientVersion = 'null';
     scope.ClientSession = 'null';
     //scope.PlayerType1 = 'site'; //Source - NOTE: This is unused as it's implicitly used by the website iself
-    scope.PlayerType2 = 'embed'; //Source
-    scope.PlayerType3 = 'proxy'; //Source
-    scope.PlayerType4 = 'thunderdome'; //480p
+    scope.PlayerType2 = 'proxy'; 
+    scope.PlayerType3 = 'proxy'; 
+    scope.PlayerType4 = 'proxy'; 
     scope.CurrentChannelName = null;
     scope.UsherParams = null;
     scope.WasShowingAd = false;
