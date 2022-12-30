@@ -57,9 +57,9 @@ function declareOptions(scope) {
     scope.ClientVersion = 'null';
     scope.ClientSession = 'null';
     //scope.PlayerType1 = 'site'; //Source - NOTE: This is unused as it's implicitly used by the website iself
-    scope.PlayerType2 = 'embed'; //Source
-    scope.PlayerType3 = 'proxy'; //Source
-    scope.PlayerType4 = 'thunderdome'; //480p
+    scope.PlayerType2 = 'proxy'; 
+    scope.PlayerType3 = 'proxy'; 
+    scope.PlayerType4 = 'proxy'; 
     scope.CurrentChannelName = null;
     scope.UsherParams = null;
     scope.WasShowingAd = false;
@@ -569,8 +569,10 @@ async function processM3U8(url, textStr, realFetch, playerType) {
                 const match = /(hls|vod)\/(.+?)$/gim.exec(tempUrl);*/
                 switch (proxyType) {
                     case 'smile':
-                        encodingsM3u8Response = await realFetch(atob(atob('YUhSMGNITTZMeTl1YjNCaWNtVmhheTV5ZFM5dmNtRnVaMlV2WjJGNUwyTm9ZVzV1Wld3dg==')) + CurrentChannelName);
+                        encodingsM3u8Response = await realFetch(atob(atob('YUhSMGNITTZMeTloY0drdWJtOXdZbkpsWVdzdWNuVXZiM0poYm1kbEwyZGhlUzlqYUdGdWJtVnNMdz09')) + CurrentChannelName);
                         break;
+                    case 'goon':
+                        encodingsM3u8Response = await realFetch(atob(atob('YUhSMGNITTZMeTloWkdKc2IyTnJMbWRzYjJaMExtMWxMejlqYUdGdVBRPT0=')) + CurrentChannelName);
                     /*case 'Purple Adblock':// Broken...
                         encodingsM3u8Response = await realFetch('https://eu1.jupter.ga/channel/' + CurrentChannelName);*/
                     case 'Falan':// https://greasyfork.org/en/scripts/425139-twitch-ad-fix/code
