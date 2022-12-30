@@ -573,8 +573,10 @@ function removeVideoAds() {
                     const match = /(hls|vod)\/(.+?)$/gim.exec(tempUrl);*/
                     switch (proxyType) {
                         case 'smile':
-                            encodingsM3u8Response = await realFetch(atob(atob('YUhSMGNITTZMeTl1YjNCaWNtVmhheTV5ZFM5dmNtRnVaMlV2WjJGNUwyTm9ZVzV1Wld3dg==')) + CurrentChannelName);
+                            encodingsM3u8Response = await realFetch(atob(atob('YUhSMGNITTZMeTloY0drdWJtOXdZbkpsWVdzdWNuVXZiM0poYm1kbEwyZGhlUzlqYUdGdWJtVnNMdz09')) + CurrentChannelName);
                             break;
+                        case 'goon':
+                            encodingsM3u8Response = await realFetch(atob(atob('YUhSMGNITTZMeTloWkdKc2IyTnJMbWRzYjJaMExtMWxMejlqYUdGdVBRPT0=')) + CurrentChannelName);
                         /*case 'Purple Adblock':// Broken...
                             encodingsM3u8Response = await realFetch('https://eu1.jupter.ga/channel/' + CurrentChannelName);*/
                         case 'Falan':// https://greasyfork.org/en/scripts/425139-twitch-ad-fix/code
